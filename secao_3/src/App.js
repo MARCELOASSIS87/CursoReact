@@ -1,5 +1,6 @@
 import './App.css';
 import Fotopessoal2 from './Assets/fotopessoal2.jpg'
+import ManagerData from './components/ManagerData';
 function App() {
   return (
     <div className="App">
@@ -12,7 +13,9 @@ function App() {
         <div>
           <img src={Fotopessoal2} alt="Foto pessoal 2" />
         </div>
+        <ManagerData/>
     </div>
+    
   );
 }
 
