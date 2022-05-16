@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import FirstComponent from './components/FirstComponent';
 import './App.css';
+import TemplateExpressions from './components/TemplateExpressions';
+import Events from './components/Events';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Fundamentos React</h1>
+      <h2>Aqui o componente:</h2>
+      <FirstComponent />
+      <TemplateExpressions />
+      <Events />
     </div>
   );
 }
