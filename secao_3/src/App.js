@@ -3,6 +3,7 @@ import './App.css';
 import Fotopessoal2 from './Assets/fotopessoal2.jpg'
 import CarDetails from './components/CarDetails';
 import ConditionalRender from './components/ConditionalRender';
+import Fragment from './components/Fragment';
 import ListRender from './components/ListRender';
 import ManagerData from './components/ManagerData';
 import ShowUserName from './components/ShowUserName';
@@ -61,6 +62,8 @@ function App() {
           newCar={car.newCar}
         />
       ))}
+      {/**fragment */}
+      <Fragment propFragment={"teste"}/>
     </div>
 
   );
