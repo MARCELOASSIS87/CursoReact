@@ -24,10 +24,15 @@ function App() {
       <ManagerData />
       <ListRender />
       <ConditionalRender />
+      {/* props */}
       <ShowUserName name="Marcelo" /**Direto*/ />
       <ShowUserName name={name} /**Pela variável*/ />
       <ShowUserName name={userName} /**Pelo useState*/ />
-      <CarDetails brand="VW" km={100000} color="Azul" />
+      {/* destructuring */}
+      <CarDetails brand="VW" km={100000} color="Azul" newCar={false} />
+      {/* reaproveitando */}
+      <CarDetails brand="ford" color = "vermelho" km={0} newCar={true}/>
+      <CarDetails brand={"fiat" } color = "verde" km={4500} newCar={false}/> 
     </div>
 
   );
