@@ -7,6 +7,7 @@ import Fragment from './components/Fragment';
 import ListRender from './components/ListRender';
 import ManagerData from './components/ManagerData';
 import ShowUserName from './components/ShowUserName';
+import Container from './components/Container';
 function App() {
   const name = "Pitchulo";
   const [userName] = useState("Maria");
@@ -64,6 +65,10 @@ function App() {
       ))}
       {/**fragment */}
       <Fragment propFragment={"teste"}/>
+      {/**cihldren */}
+      <Container myValue="testing">
+        <p>Este é o conteúdo</p> 
+      </Container>
     </div>
 
   );
